@@ -84,3 +84,10 @@
 |---|---|---|
 | דוגמנית 1 | https://www.magnific.com/app/creation/ks0ZZMv16B | 4K |
 | דוגמנית 2 | https://www.magnific.com/app/creation/XmJNkyIBfo | 4K, נוצרה מחדש עם "דגם 14 - תקריב פתח צוואר מאושר" |
+
+## דגם 4 — מאושר (הושלם)
+| תמונה | קישור | הערה |
+|---|---|---|
+| ילדה גדולה | https://www.magnific.com/app/creation/fHRnnBVCDY | 4K, חגורת קטיפה ותחרה בפרינסס (לבקשת שושי) |
+| ילדה קטנה | https://www.magnific.com/app/creation/s7dtt1Sl8e | 4K, שרוולים אטומים |
+- לדגמים הבאים: ליצור לוח דמות חדש לילדה הקטנה, בת 3 ונמוכה יותר, לפי הרפרנס עם התסרוקת האסופה.
