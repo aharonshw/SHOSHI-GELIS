@@ -37,27 +37,30 @@
 11. ענף git: `claude/confident-galileo-4r4nod`. לבצע commit ו־push אחרי כל אישור.
 
 ## Magnific
-- **החשבון הנוכחי:** Premium+. הפרויקט: "שושי גליס — קטלוג שמלות" (folderReference `f0d59451-8b0c-49d9-9d3a-f935d7d11978`).
-- **החשבון כבר התחלף פעמיים.** אם המזהים לא נמצאים (notFound), צריך להעלות מחדש את הלוחות מ־`review/boards/`.
+- **החשבון הנוכחי:** z12624091 ("חשבון שורץ"), Plus. הפרויקט: "שושי גליס — קטלוג שמלות" (folderReference `736649c7-48c2-4480-9981-4f3a060a7870`).
+- **החשבון כבר התחלף כמה פעמים.** אם המזהים לא נמצאים (notFound), צריך להעלות מחדש את הלוחות מ־`review/boards/`.
 - **העלאה:** `creations_request_upload`, אחריו PUT עם curl, ואז `creations_finalize_upload`.
 - **הורדת תוצאות:** curl מ־`pikaso.cdnpk.net`.
 - **שגיאת NSFW שגויה** (קורה עם ילדות): לנסח את הפרומפט מחדש, למשל "children's formal-wear catalog photo", ולהוריד את המילה "fitted".
 
-### מזהי לוחות ורפרנסים בחשבון הנוכחי
+### מזהי לוחות ורפרנסים בחשבון הנוכחי (z12624091, "חשבון שורץ", מ־13.11)
+- הפרויקט: "שושי גליס — קטלוג שמלות" (folderReference `736649c7-48c2-4480-9981-4f3a060a7870`).
+
 | מה | מזהה Magnific | עותק מקומי |
 |---|---|---|
-| לוח דוגמנית 1 | `P3vp2Ak42C` | review/boards/board_d1.jpg |
-| לוח דוגמנית 2 | `lJdnP9Dgv9` | review/boards/board_d2.jpg |
-| לוח ילדה גדולה (בת 10) | `p8S5mvpehw` | review/boards/board_big.jpg |
-| **לוח ילדה קטנה חדש, בת 3** (מאושר 05.11) | `iGQKwVF3uK` | review/boards/board_small_age3.jpg |
-| צוואר לב נשים, שחור | `CqR7KxHEEy` | review/neck-refs/women_black_sweetheart.jpg |
-| צוואר לב ילדות, שחור | `VXsH8hqMMU` | review/neck-refs/girls_black_sweetheart_model4.jpg |
-| צוואר לב של דגם 4 (שושי) | `Eb2W9tmuuO` | review/neck-refs/model4_shoshi_sweetheart.jpg |
-| צוואר מאושר של דגם 14 | `CqZYwwgEEy` | review/neck-refs/model14_approved_neck.jpg |
+| לוח דוגמנית 1 | `0egmXt8TfW` | review/boards/board_d1.jpg |
+| לוח דוגמנית 2 | `ksDOgJV16B` | review/boards/board_d2.jpg |
+| לוח ילדה גדולה (בת 10) | `xSd4wPxjfW` | review/boards/board_big.jpg |
+| לוח ילדה קטנה, בת 3 | `xSd4w4YjfW` | review/boards/board_small_age3.jpg |
+| צוואר לב נשים, שחור | `vQZ1H1da47` | review/neck-refs/women_black_sweetheart.jpg |
+| צוואר לב ילדות, שחור | `bxTwL745Y2` | review/neck-refs/girls_black_sweetheart_model4.jpg |
+| צוואר לב של דגם 4 (שושי) | `P3EYZWF42C` | review/neck-refs/model4_shoshi_sweetheart.jpg |
+| צוואר מאושר של דגם 14 | `WDsIemecXe` | review/neck-refs/model14_approved_neck.jpg |
+| חגורת אבני קריסטל (צילום שושי) | `ksDOgNX16B` | — |
 
 ## סטטוס דגמים
 - **הושלמו:** 2, 11 (בחשבון הישן), 8, 3, 14, 4. הפירוט וקישורי Magnific נמצאים ב־`review/approved.md`.
-- **הבא בתור:** דגם **1** (אפרסק). הניתוח המלא ב־`catalog-audit/model-01.md`.
+- **בעבודה:** דגם **1** (אפרסק), ראו `review/approved.md`. הניתוח המלא ב־`catalog-audit/model-01.md`.
 - **אחריו לפי הסדר:** 9, 12, 13, 6, 7, 5, 10.
 - **ניתוח מפורט לכל דגם:** `catalog-audit/model-XX.md`. שם מופיעים המקורות של שושי, ההערות שלה ומה חסר.
 
