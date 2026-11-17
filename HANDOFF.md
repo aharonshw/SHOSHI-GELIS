@@ -34,10 +34,11 @@
     5. אם צריך, עושים סבב תיקונים.
     6. רושמים את האישורים ב־`review/approved.md`, ואז commit ו־push.
     - **המשתמשת לא פותחת קישורים.** הכול מוצג בצ'אט.
-11. ענף git: `claude/confident-galileo-4r4nod`. לבצע commit ו־push אחרי כל אישור.
+11. ענף git: `claude/gallant-wozniak-l8i1lm`. לבצע commit ו־push אחרי כל אישור.
+12. **מ־17.11, לדגמים 1, 9, 12, 13, 6, 7, 5, 10:** עובדים על הכול ברצף, והמשתמשת מאשרת רק בסוף. בודקים כל תמונה בעיניים ועושים עד שני סבבי תיקונים לכל תמונה.
 
 ## Magnific
-- **החשבון הנוכחי:** Premium+. הפרויקט: "שושי גליס — קטלוג שמלות" (folderReference `f0d59451-8b0c-49d9-9d3a-f935d7d11978`).
+- **החשבון הנוכחי (מ־17.11):** המחבר "Magnific שורץ" (כלים `mcp__Magnific-bcaf73fa__*`), לפי בחירת המשתמשת. הפרויקט: "שושי גליס — קטלוג שמלות" (folderReference `736649c7-48c2-4480-9981-4f3a060a7870`). הלוחות והרפרנסים הועלו אליו מחדש ב־17.11.
 - **החשבון כבר התחלף פעמיים.** אם המזהים לא נמצאים (notFound), צריך להעלות מחדש את הלוחות מ־`review/boards/`.
 - **העלאה:** `creations_request_upload`, אחריו PUT עם curl, ואז `creations_finalize_upload`.
 - **הורדת תוצאות:** curl מ־`pikaso.cdnpk.net`.
@@ -46,14 +47,14 @@
 ### מזהי לוחות ורפרנסים בחשבון הנוכחי
 | מה | מזהה Magnific | עותק מקומי |
 |---|---|---|
-| לוח דוגמנית 1 | `P3vp2Ak42C` | review/boards/board_d1.jpg |
-| לוח דוגמנית 2 | `lJdnP9Dgv9` | review/boards/board_d2.jpg |
-| לוח ילדה גדולה (בת 10) | `p8S5mvpehw` | review/boards/board_big.jpg |
-| **לוח ילדה קטנה חדש, בת 3** (מאושר 05.11) | `iGQKwVF3uK` | review/boards/board_small_age3.jpg |
-| צוואר לב נשים, שחור | `CqR7KxHEEy` | review/neck-refs/women_black_sweetheart.jpg |
-| צוואר לב ילדות, שחור | `VXsH8hqMMU` | review/neck-refs/girls_black_sweetheart_model4.jpg |
-| צוואר לב של דגם 4 (שושי) | `Eb2W9tmuuO` | review/neck-refs/model4_shoshi_sweetheart.jpg |
-| צוואר מאושר של דגם 14 | `CqZYwwgEEy` | review/neck-refs/model14_approved_neck.jpg |
+| לוח דוגמנית 1 | `s78RGEEl8e` | review/boards/board_d1.jpg |
+| לוח דוגמנית 2 | `bxVO9Ie5Y2` | review/boards/board_d2.jpg |
+| לוח ילדה גדולה (בת 10) | `DoJuqZRpcl` | review/boards/board_big.jpg |
+| **לוח ילדה קטנה חדש, בת 3** (מאושר 05.11) | `s78RGFFl8e` | review/boards/board_small_age3.jpg |
+| צוואר לב נשים, שחור | `9ZFVelCNYZ` | review/neck-refs/women_black_sweetheart.jpg |
+| צוואר לב ילדות, שחור | `VXwCF2JMMU` | review/neck-refs/girls_black_sweetheart_model4.jpg |
+| צוואר לב של דגם 4 (שושי) | `Xm4qkcVBfo` | review/neck-refs/model4_shoshi_sweetheart.jpg |
+| צוואר מאושר של דגם 14 | `VXwCFGyMMU` | review/neck-refs/model14_approved_neck.jpg |
 
 ## סטטוס דגמים
 - **הושלמו:** 2, 11 (בחשבון הישן), 8, 3, 14, 4. הפירוט וקישורי Magnific נמצאים ב־`review/approved.md`.
