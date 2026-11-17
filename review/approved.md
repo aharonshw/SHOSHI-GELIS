@@ -222,3 +222,44 @@
 
 ## פגם חוזר בכל הדגמים
 - **הרקע של הילדה הגדולה אפור־בהיר ולא לבן מלא** בכל 8 הדגמים. לוח הדמות שלה מצולם על רקע אפור, והמודל מעתיק אותו גם אחרי שני סבבים. הפתרון הנכון: ליצור לוח חדש לילדה הגדולה על רקע לבן, או לאשר הלבנת רקע בעריכה.
+
+---
+
+# סבב 2 (17.11) — GPT 2.6, ממתין לאישור המשתמשת
+
+סבב 1 (Nano Banana) נפסל כולו על ידי המשתמשת. הכללים המעודכנים: `tools/AGENT_BRIEF_R2.md`. השוואות: `review/r2/mXX-<shot>.jpg`; נבחרות: `review/r2/final/`.
+
+| דגם | שוט | קישור | מה לא עבר במלואו |
+|---|---|---|---|
+| 1 | d1 | https://www.magnific.com/app/creation/dtPbDFzXSL | חוד קטן בשקע; שכבת הטול בעליון כמעט לא מורגשת |
+| 1 | d2 | https://www.magnific.com/app/creation/DoJFT6Ipcl | חוד קטן בשקע; הפיזור בחצאית סימטרי ולא "בצד" |
+| 1 | d1-v3 | https://www.magnific.com/app/creation/xSXRgIdjfW | חוד קטן; גוון מעט שמנתי מ־d1/d2 |
+| 1 | big-flowers | https://www.magnific.com/app/creation/gOtGgYcSXO | נראית בת 11–12; הפרחים גולשים לראש החצאית (כמו בצילום); חוד קטן |
+| 1 | big-plain | https://www.magnific.com/app/creation/4RQD2H89Aa | נראית בת 11–12; חוד קטן וגל קל בפתח |
+| 1 | small | https://www.magnific.com/app/creation/O6CT9Cwynm | נראית בת 4; שיער מעט ג'ינג'י; חוד קטן |
+| 5 | big | https://www.magnific.com/app/creation/gOtGgAzSXO | חוד קטן בשקע |
+| 5 | small | https://www.magnific.com/app/creation/79aWwKIJAL | חוד קטן בשקע; מנז'ט ארוך מעט |
+| 6 | d1 | https://www.magnific.com/app/creation/VXwuVs4MMU | צוואר מרובע מעט רחב; שרוול מעל המרפק עם כיווץ כמו גומי |
+| 6 | d2 | https://www.magnific.com/app/creation/s782xbRl8e | חוד קטן; ברק סגלגל בפייטים |
+| 6 | big | https://www.magnific.com/app/creation/4RQMObF9Aa | נמשים וסומק קל (כמו בלוח); שרוול נפוח מעט |
+| 6 | small | https://www.magnific.com/app/creation/6AqdRzeiJO | פס שפה בצוואר; אבנים קטנות; עור ושיער אדמדמים |
+| 7 | d1 | https://www.magnific.com/app/creation/kspN5xe16B | עומדת בכללים (צוואר עגול; בצילום יש פס צווארון צר) |
+| 7 | d2 | https://www.magnific.com/app/creation/1le6bRzr4r | צוואר כמעט עגול; מכפלת רחבה בקצה השרוול |
+| 7 | big | https://www.magnific.com/app/creation/xSXRsARjfW | חוד בשקע; גוון עור חם־שזוף |
+| 7 | small | https://www.magnific.com/app/creation/IfirBQztvE | עגילי נקודה; חוד בשקע |
+| 9 | d1 | https://www.magnific.com/app/creation/SymzSefUb8 | שקע מחודד (כמו בשמלה האמיתית) |
+| 9 | d2 | https://www.magnific.com/app/creation/rgdirA4xtc | שקע מחודד |
+| 9 | big | https://www.magnific.com/app/creation/SymnyfqUb8 | גוון פנים חם־זהוב |
+| 9 | small | https://www.magnific.com/app/creation/fHGSHMeCDY | נראית בת 4–5 |
+| 10 | d1 | https://www.magnific.com/app/creation/KLD9HX2kqp | חוד בשקע (כמו בצילום); ראש שרוול מנופח מעט; גוון קריר |
+| 10 | d2 | https://www.magnific.com/app/creation/tC3xBVemZJ | ראש שרוול מנופח מעט; גוון קריר |
+| 12 | d1 | https://www.magnific.com/app/creation/O6CTiRXynm | פסים אופקיים גבוהים מעט; חוד קל |
+| 12 | d2 | https://www.magnific.com/app/creation/iGbd6Zw3uK | חוד קל |
+| 12 | big | https://www.magnific.com/app/creation/IfixflTtvE | שתי שורות תחרה במנז'ט; פנים בהירות מהלוח |
+| 12 | small | https://www.magnific.com/app/creation/gOtzOM0SXO | חגורת אבנים בשתי שורות |
+| 13 | d1 | https://www.magnific.com/app/creation/yiETgi2PW9 | חוד קטן |
+| 13 | d2 | https://www.magnific.com/app/creation/79aWUTNJAL | חוד קטן; עליון די צמוד |
+| 13 | big | https://www.magnific.com/app/creation/VXwu0kJMMU | **נפסלת: גוון כתום־שזוף, סומק ונמשים בפנים** |
+| 13 | small | https://www.magnific.com/app/creation/gOtGsoGSXO | עגילי נקודה; הברך מכוסה כולה |
+
+פגמים חוזרים ב־GPT 2.6: חוד קטן בתחתית שקע הלב (גם רפרנסי הצוואר וגם חלק מהשמלות האמיתיות מחודדים); גוון עור חם אצל הילדה הגדולה (הלוח שלה שזוף ומנומש); עגילים שמועתקים מתמונות המקור של הילדה הקטנה.
