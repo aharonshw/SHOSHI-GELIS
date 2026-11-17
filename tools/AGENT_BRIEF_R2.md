@@ -57,3 +57,9 @@
 - הנבחרת בגובה 2400px: `/home/user/SHOSHI-GELIS/review/r2/final/mXX-<shot>.jpg`.
 - שמות השוטים: `d1`, `d2`, `big`, `small` (בדגם 1 גם `d1-v3`, `big-flowers`, `big-plain`).
 - דוח סופי קצר: לכל שוט קישור `https://www.magnific.com/app/creation/<identifier>`, מספר סבבים, ושורה אחת לכל קריטריון שלא עבר במלואו. בסוף: האם לדעתך התמונה עומדת **בכל** הכללים (כן/לא) לכל שוט. בלי לייפות: המשתמשת ביקשה לקבל לאישור רק תמונות מדויקות לגמרי.
+
+## תוספת (17.11): עור הפנים — בלי הכתמים של GPT
+המשתמשת מוטרדת מ"הכתמים הידועים של GPT" על הפנים. בפיילוט הם הופיעו אצל הילדה הגדולה: סומק אדמדם־כתום לא אחיד על הלחיים והמצח ונמשים מודגשים.
+- להוסיף לכל פרומפט: "Skin: clear, even, natural fair skin tone exactly like image 1; no red or orange blotches, no uneven flush, no mottled patches, no added freckles, no orange or yellow colour cast on the face; soft natural studio skin."
+- קריטריון חובה נוסף: חיתוך הפנים ברזולוציה מלאה (בערך `0.36 0.01 0.64 0.20` ב־crop.py) והשוואה ללוח הדמות. תמונה עם כתמים, סומק לא אחיד או גוון כתום על הפנים נפסלת, גם אם השמלה מושלמת.
+- בדוח: לכתוב לכל שוט אם הפנים נקיות מכתמים (כן/לא).
