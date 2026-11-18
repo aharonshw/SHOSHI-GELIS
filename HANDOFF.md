@@ -34,36 +34,48 @@
     5. אם צריך, עושים סבב תיקונים.
     6. רושמים את האישורים ב־`review/approved.md`, ואז commit ו־push.
     - **המשתמשת לא פותחת קישורים.** הכול מוצג בצ'אט.
-11. ענף git: `claude/confident-galileo-4r4nod`. לבצע commit ו־push אחרי כל אישור.
+11. ענף git: `claude/gallant-wozniak-l8i1lm` (סבב 2–3), ובמקביל `claude/confident-galileo-4r4nod`, שאוחד איתו ב־18.11. לבצע commit ו־push אחרי כל אישור.
+12. **מ־17.11, לדגמים 1, 9, 12, 13, 6, 7, 5, 10:** עובדים על הכול ברצף, והמשתמשת מאשרת רק בסוף. בודקים כל תמונה בעיניים ועושים עד שני סבבי תיקונים לכל תמונה.
+
+## כללים שעודכנו ב־17.11 (גוברים על מה שלמעלה)
+- המשתמשת פסלה את כל תמונות סבב 1 של דגמים 1, 9, 12, 13, 6, 7, 5, 10 (Nano Banana). יוצרים הכול מחדש ב־**GPT 2.6** (`gpt-2-6`, 4K, quality high, thinking high).
+- **מותן צרה ומודגשת** אצל כולן. **שמלות הילדות נפוחות מאוד, לפחות כמו בצילומי הרפרנס.**
+- קודם כול הצילום האמיתי; ההערות של שושי מתקנות רק מה שנאמר בהן במפורש, ובמידה.
+- **ילדה קטנה:** הפנים הנכונות הן "המקור" (`review/boards/small_original_loose_braids.jpg`, `small_original_updo.jpg`), לא הלוח `board_small_age3.jpg`.
+- **תסרוקות לילדות:** גיוון מלא בין הדגמים, כולל אסוף וכולל אקססוריז בשיער. נשים: שיער פתוח.
+- למשתמשת מגישים לאישור רק תמונות שעומדות בכל הכללים.
+- הפירוט המלא: `tools/AGENT_BRIEF_R2.md`. תוצרי סבב 2: `review/r2/`.
 
 ## Magnific
-- **החשבון הנוכחי:** z12624091 ("חשבון שורץ"), Plus. הפרויקט: "שושי גליס — קטלוג שמלות" (folderReference `736649c7-48c2-4480-9981-4f3a060a7870`).
-- **החשבון כבר התחלף כמה פעמים.** אם המזהים לא נמצאים (notFound), צריך להעלות מחדש את הלוחות מ־`review/boards/`.
+- **החשבון הנוכחי (מ־17.11):** המחבר "Magnific שורץ" (כלים `mcp__Magnific-bcaf73fa__*`), לפי בחירת המשתמשת. הפרויקט: "שושי גליס — קטלוג שמלות" (folderReference `736649c7-48c2-4480-9981-4f3a060a7870`). הלוחות והרפרנסים הועלו אליו מחדש ב־17.11.
+- **החשבון כבר התחלף פעמיים.** אם המזהים לא נמצאים (notFound), צריך להעלות מחדש את הלוחות מ־`review/boards/`.
 - **העלאה:** `creations_request_upload`, אחריו PUT עם curl, ואז `creations_finalize_upload`.
 - **הורדת תוצאות:** curl מ־`pikaso.cdnpk.net`.
 - **שגיאת NSFW שגויה** (קורה עם ילדות): לנסח את הפרומפט מחדש, למשל "children's formal-wear catalog photo", ולהוריד את המילה "fitted".
 
-### מזהי לוחות ורפרנסים בחשבון הנוכחי (z12624091, "חשבון שורץ", מ־13.11)
-- הפרויקט: "שושי גליס — קטלוג שמלות" (folderReference `736649c7-48c2-4480-9981-4f3a060a7870`).
-
+### מזהי לוחות ורפרנסים בחשבון הנוכחי
 | מה | מזהה Magnific | עותק מקומי |
 |---|---|---|
-| לוח דוגמנית 1 | `0egmXt8TfW` | review/boards/board_d1.jpg |
-| לוח דוגמנית 2 | `ksDOgJV16B` | review/boards/board_d2.jpg |
-| לוח ילדה גדולה (בת 10) | `xSd4wPxjfW` | review/boards/board_big.jpg |
-| לוח ילדה קטנה, בת 3 | `xSd4w4YjfW` | review/boards/board_small_age3.jpg |
-| צוואר לב נשים, שחור | `vQZ1H1da47` | review/neck-refs/women_black_sweetheart.jpg |
-| צוואר לב ילדות, שחור | `bxTwL745Y2` | review/neck-refs/girls_black_sweetheart_model4.jpg |
-| צוואר לב של דגם 4 (שושי) | `P3EYZWF42C` | review/neck-refs/model4_shoshi_sweetheart.jpg |
-| צוואר מאושר של דגם 14 | `WDsIemecXe` | review/neck-refs/model14_approved_neck.jpg |
-| חגורת אבני קריסטל (צילום שושי) | `ksDOgNX16B` | — |
+| לוח דוגמנית 1 | `s78RGEEl8e` | review/boards/board_d1.jpg |
+| לוח דוגמנית 2 | `bxVO9Ie5Y2` | review/boards/board_d2.jpg |
+| לוח ילדה גדולה (בת 10) | `DoJuqZRpcl` | review/boards/board_big.jpg |
+| **לוח ילדה קטנה חדש, בת 3** (מאושר 05.11) | `s78RGFFl8e` | review/boards/board_small_age3.jpg |
+| צוואר לב נשים, שחור | `9ZFVelCNYZ` | review/neck-refs/women_black_sweetheart.jpg |
+| צוואר לב ילדות, שחור | `VXwCF2JMMU` | review/neck-refs/girls_black_sweetheart_model4.jpg |
+| צוואר לב של דגם 4 (שושי) | `Xm4qkcVBfo` | review/neck-refs/model4_shoshi_sweetheart.jpg |
+| צוואר מאושר של דגם 14 | `VXwCFGyMMU` | review/neck-refs/model14_approved_neck.jpg |
+
+## עבודה מקבילה (ענף confident-galileo, אוחד 18.11)
+- דגם 1 ודגם 9 נוצרו גם שם, ב־Nano Banana ובחשבון שורץ, עם אישורים חלקיים של המשתמשת. הפירוט בסוף `review/approved.md`.
+- מזהים נוספים בחשבון שורץ מהענף הזה: לוח ילדה קטנה בת 3 `xSd4w4YjfW`; צילומי דגם 9 (נשים וילדות, כולל הקבצים הכבדים): `s78tfnul8e`, `nVLl7EaYQD`, `p8OPikzehw`, `bxVDB3y5Y2`, `gOthE0ESXO`, `lJImC0ngv9`, `xSXohYLjfW`, `6Aq5xmMiJO`, `TdU74KUVNR` (צוואר ילדות), `xSXohWsjfW`, `MB7ONrODCm`, `EbnWM6KuuO`.
+- הכלי `download_file_content` שומר עכשיו את התמונה כקובץ בלי מגבלת גודל (ירדו קבצים של 9MB).
 
 ## סטטוס דגמים
-- **הושלמו:** 2, 11 (בחשבון הישן), 8, 3, 14, 4. הפירוט וקישורי Magnific נמצאים ב־`review/approved.md`.
-- **דגם 1** (אפרסק): הילדות הושלמו. דוגמניות 1 ו־2 ממתינות לצילום השמלה התפורה משושי (ראו `review/approved.md`).
-- **הבא בתור:** דגם **9**. הניתוח המלא ב־`catalog-audit/model-09.md`.
-- **אחריו לפי הסדר:** 12, 13, 6, 7, 5, 10.
-- **ניתוח מפורט לכל דגם:** `catalog-audit/model-XX.md`. שם מופיעים המקורות של שושי, ההערות שלה ומה חסר.
+- **הושלמו ואושרו:** 2, 11, 8, 3, 14, 4.
+- **נוצרו ב־17.11 וממתינים לאישור המשתמשת:** 1, 9, 12, 13, 6, 7, 5, 10. הפירוט, הקישורים והפגמים שנשארו: `review/approved.md` (החלק "סבב 17.11"). תמונות השוואה: `review/mXX-*.jpg`; הנבחרות: `review/final/`.
+- **בעיה פתוחה:** הרקע של הילדה הגדולה אפור־בהיר בכל הדגמים (הלוח שלה על רקע אפור).
+- **ניתוח מפורט לכל דגם:** `catalog-audit/model-XX.md`.
+- **הנחיות לסוכן שמטפל בדגם אחד:** `tools/AGENT_BRIEF.md`.
 
 ## מקורות
 - **צילומי שושי:** בגוגל דרייב, בתיקיות לפי דגם. הקישורים בקובצי ה־audit.
