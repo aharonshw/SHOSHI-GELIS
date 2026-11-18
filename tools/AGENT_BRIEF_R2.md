@@ -63,3 +63,13 @@
 - להוסיף לכל פרומפט: "Skin: clear, even, natural fair skin tone exactly like image 1; no red or orange blotches, no uneven flush, no mottled patches, no added freckles, no orange or yellow colour cast on the face; soft natural studio skin."
 - קריטריון חובה נוסף: חיתוך הפנים ברזולוציה מלאה (בערך `0.36 0.01 0.64 0.20` ב־crop.py) והשוואה ללוח הדמות. תמונה עם כתמים, סומק לא אחיד או גוון כתום על הפנים נפסלת, גם אם השמלה מושלמת.
 - בדוח: לכתוב לכל שוט אם הפנים נקיות מכתמים (כן/לא).
+
+## תוספת (18.11): סבב 4 — איכות מקסימלית, לוח חדש לילדה הגדולה, החלטות המשתמשת
+- **מרקם:** המשתמשת פסלה את "מרקם הרינדור של GPT" על העור. הפתרון שנבדק ועובד: `extraSettings: {"quality": "max", "thinkingLevel": "high"}` יחד עם `width: 3392, height: 5056` (בלי `resolution` ובלי `aspectRatio`). הפלט בפועל 2637×3931, והעור יוצא חלק. עלות: 940 קרדיטים לתמונה, לכן `count: 2` ולא יותר, ולא יותר משני סבבים.
+- **לא להשתמש ב־`images_skin_enhancer`:** בבדיקה הוא שינה את הפנים, הוסיף נזם ועגילים והשחים את העור.
+- להוסיף לכל פרומפט: "shot on a professional medium-format camera, natural photographic detail" ואת משפט ה־Skin בנוסח: "Skin: clear, even, smooth, soft natural skin exactly like image 1, real photographic skin with no painterly, grainy or mottled rendered texture, no blotches, no added freckles, no orange cast."
+- קריטריון חובה: חיתוך הפנים ב־100% (פיקסל לפיקסל). עור מגורען/ציורי = פסילה.
+- **לוח חדש לילדה הגדולה (מאושר 18.11):** `rgd1Edrxtc` (עותק: `review/boards/board_big_v2.jpg`). אותה ילדה ואותו גוון, עור חלק ונמשים עדינים מאוד. הלוח הישן `DoJuqZRpcl` לא בשימוש. גוון העור בתוצאה: כמו בלוח החדש, לא חיוור יותר ולא שזוף יותר.
+- **תסרוקות הילדה הגדולה:** שונות בכל דגם, לפי הטבלה למעלה, כולל אקססוריז.
+- **פתח צוואר:** החוד הקטן בתחתית שקע הלב מאושר ואינו פוסל. פתח לב נדרש כשהוא מופיע בגזרת השמלה.
+- **נפח אצל הנשים:** כשבצילום החצאית רחבה, היא צריכה לצאת רחבה ונפוחה ("standing out wide like a ball skirt over a petticoat, at least as wide and full as in image N").
