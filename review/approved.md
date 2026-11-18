@@ -289,3 +289,8 @@
 - **אושרו (ילדה גדולה, לוח חדש):** דגם 6 `big` אפשרות ALT (https://www.magnific.com/app/creation/u5YuS4kQLD); דגם 7 `big` אפשרות ALT (https://www.magnific.com/app/creation/YMsYmqDWeC) אחרי תיקון שרוול באידיאוגרם 4.5: בטנת מנטה מתחת לטול, לא שקוף (https://www.magnific.com/app/creation/lJIl08Ngv9, 2K).
 - **ילדה גדולה, ממתין לאישור:** דגם 9 https://www.magnific.com/app/creation/3z53eOVREY ; דגם 12 https://www.magnific.com/app/creation/jUBj2N9LD0 ; דגם 13 https://www.magnific.com/app/creation/gOtg2sOSXO ; דגם 5 https://www.magnific.com/app/creation/kspk9wg16B ; דגם 1 פרחים https://www.magnific.com/app/creation/s78sYSfl8e ; דגם 1 חלקה https://www.magnific.com/app/creation/1le13VEr4r
 - דגם 12 `d1` (פסים) באיכות max: https://www.magnific.com/app/creation/lJIlNFIgv9 , ממתין לאישור.
+
+## 18.11 (אישורים נוספים)
+- כלל מהמשתמשת: בתמונות ההשוואה PICK = אפשרות 1, ALT = אפשרות 2.
+- **אושרו:** דגם 7 ילדה גדולה אחרי תיקון השרוול (https://www.magnific.com/app/creation/lJIl08Ngv9); דגם 1 ילדה גדולה עם פרחים, אפשרות 1 (https://www.magnific.com/app/creation/s78sYSfl8e); דגם 5 ילדה גדולה, אפשרות 1 (https://www.magnific.com/app/creation/kspk9wg16B).
+- **נפסלה:** דגם 1 ילדה גדולה חלקה עם חגורת אבנים (לא זהה לדמות, מותן נמוכה מדי, השמלה לא פורחת מהחגורה). נוצרה מחדש ב־quality high: אפשרות 1 https://www.magnific.com/app/creation/nVLnioEYQD , אפשרות 2 https://www.magnific.com/app/creation/KLDKEJ8kqp . ממתין לאישור.
