@@ -34,7 +34,7 @@
     5. אם צריך, עושים סבב תיקונים.
     6. רושמים את האישורים ב־`review/approved.md`, ואז commit ו־push.
     - **המשתמשת לא פותחת קישורים.** הכול מוצג בצ'אט.
-11. ענף git: `claude/gallant-wozniak-l8i1lm`. לבצע commit ו־push אחרי כל אישור.
+11. ענף git: `claude/gallant-wozniak-l8i1lm` (סבב 2–3), ובמקביל `claude/confident-galileo-4r4nod`, שאוחד איתו ב־18.11. לבצע commit ו־push אחרי כל אישור.
 12. **מ־17.11, לדגמים 1, 9, 12, 13, 6, 7, 5, 10:** עובדים על הכול ברצף, והמשתמשת מאשרת רק בסוף. בודקים כל תמונה בעיניים ועושים עד שני סבבי תיקונים לכל תמונה.
 
 ## כללים שעודכנו ב־17.11 (גוברים על מה שלמעלה)
@@ -73,6 +73,11 @@
 | צוואר לב ילדות, שחור | `VXwCF2JMMU` | review/neck-refs/girls_black_sweetheart_model4.jpg |
 | צוואר לב של דגם 4 (שושי) | `Xm4qkcVBfo` | review/neck-refs/model4_shoshi_sweetheart.jpg |
 | צוואר מאושר של דגם 14 | `VXwCFGyMMU` | review/neck-refs/model14_approved_neck.jpg |
+
+## עבודה מקבילה (ענף confident-galileo, אוחד 18.11)
+- דגם 1 ודגם 9 נוצרו גם שם, ב־Nano Banana ובחשבון שורץ, עם אישורים חלקיים של המשתמשת. הפירוט בסוף `review/approved.md`.
+- מזהים נוספים בחשבון שורץ מהענף הזה: לוח ילדה קטנה בת 3 `xSd4w4YjfW`; צילומי דגם 9 (נשים וילדות, כולל הקבצים הכבדים): `s78tfnul8e`, `nVLl7EaYQD`, `p8OPikzehw`, `bxVDB3y5Y2`, `gOthE0ESXO`, `lJImC0ngv9`, `xSXohYLjfW`, `6Aq5xmMiJO`, `TdU74KUVNR` (צוואר ילדות), `xSXohWsjfW`, `MB7ONrODCm`, `EbnWM6KuuO`.
+- הכלי `download_file_content` שומר עכשיו את התמונה כקובץ בלי מגבלת גודל (ירדו קבצים של 9MB).
 
 ## סטטוס דגמים
 - **הושלמו ואושרו:** 2, 11, 8, 3, 14, 4.
