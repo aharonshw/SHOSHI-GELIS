@@ -23,5 +23,5 @@
 | m07-d2 | 2 | `xSBl6s5jfW` |
 | m12-d2 | 1 | `0eUDvnlTfW` |
 | m13-d2 | 1 | `fHzQLv2CDY` |
-
-נפסלו ונוצרים מחדש (הפנים נשארו של GPT ולא של התקריב): m12-big, m13-small.
+| m12-big | 1 (סבב 2) | `hu2E1sFvqL` |
+| m13-small | 1 (סבב 2) | `Lw8U6AeswO` |
