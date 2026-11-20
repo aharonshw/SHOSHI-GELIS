@@ -27,3 +27,5 @@
 | m13-small | 2 | `gOmwxo0SXO` | `3zK2PaTREY` |
 | m09-big | 1 | `p8yXXVLehw` | `nVsWLuNYQD` (גוף מלא מאושר: `BhNI3FsoQR`) |
 | m10-d2 | 2 | `mEZafvPhJQ` | `UPv7hYTwny` (גוף מלא מאושר: `tCRvA1jmZJ`) |
+| m12-d1 | 2 | `dt4EtWvXSL` | `dtPqAacXSL` (גרסה 1, ננו בננה) |
+| m13-big | 2 | `dt4EQvqXSL` | `3zKZkXdREY` (עם הפרח במותן) |
