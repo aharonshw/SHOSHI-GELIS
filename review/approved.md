@@ -405,3 +405,4 @@
 - **תקריבים לדגם 9 נשים (23.11, ממתין לאישור):** m09-d1 `dt9KR75XSL` (1) / `1lX3tVEr4r` (2), שמלה `Bh962YyoQR`; m09-d2 `N2bdrH46D9` (1) / `JNETqChOq4` (2), שמלה `iGbKjwV3uK`. גיליונות ב־`review/r3/closeups/m09-d1-closeup.jpg`, `m09-d2-closeup.jpg`.
 - **אושרו (23.11):** תקריב m09-d1 אפשרות 2 (`1lX3tVEr4r`), תקריב m09-d2 אפשרות 1 (`N2bdrH46D9`).
 - **גוף מלא דגם 9 נשים (23.11, ממתין לאישור):** m09-d1 `XmNkn35Bfo` (1) / `WDSCN7zcXe` (2), שמלה בלי ראש `u5cJBlpQLD`; m09-d2 `lJmzHuZgv9` (1) / `9Zqesj3NYZ` (2), שמלה בלי ראש `5jpNhyHKxe`. גיליונות: `review/r3/full/m09-d1-full.jpg`, `m09-d2-full.jpg`.
+- **דגם 9 נשים, הערת המשתמשת (23.11):** השרוול צריך להיות טיפה יותר קצר, יותר צמוד למטה ויותר מגוהץ. סבב 2: m09-d1 `p8PbpFtehw` (1) / `xSoZxitjfW` (2); m09-d2 `p8Pbp5aehw` (1) / `O6uVOM5ynm` (2). גיליונות: `review/r3/full/m09-d1-full-v2.jpg`, `m09-d2-full-v2.jpg`. השינוי באורך עדין; הצוואר עדיין מחודד מעט; שיער d1 עדיין על כתף אחת. ממתין לאישור.
