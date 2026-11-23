@@ -55,6 +55,7 @@ section.model{margin-top:34px;scroll-margin-top:120px}
 .shot h3 small{font-weight:400;color:var(--muted);font-size:14px;margin-inline-start:6px}
 .tiles{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
 .tiles.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.tiles.one{grid-template-columns:minmax(0,1fr);max-width:50%}
 .shot.wide{grid-column:1/-1}
 .tile{display:flex;flex-direction:column;gap:8px;border:2px solid transparent;border-radius:14px;padding:6px;transition:border-color .2s,background .2s}
 .tile[data-status="ok"]{border-color:var(--ok);background:var(--ok-soft)}
@@ -169,7 +170,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:10px 16px 40p
   <div class="finish"><button class="send" data-open-summary>סיכום ושליחה</button></div>
 </main>
 <footer>
-  הסימונים וההערות נשמרים אוטומטית בדפדפן הזה. עדיין לא כלול כאן: דגם 1 לשתי הנערות, שממתין לצילום של השמלה.
+  הסימונים וההערות נשמרים אוטומטית בדפדפן הזה. בדגם 1 חסרות עדיין שתי גרסאות לנערות, שממתינות לצילום של השמלה.
 </footer>
 
 <div class="overlay" id="lb" role="dialog" aria-modal="true" aria-label="תמונה מוגדלת">
@@ -195,7 +196,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:10px 16px 40p
 
 <script>
 const DATA = /*__DATA__*/null;
-const KEY = 'shoshi-gelis-approval-v1';
+const KEY = 'shoshi-gelis-approval-v2';
 const TOTAL = __TOTAL__;
 let state = {items:{}, general:''};
 try { const s = JSON.parse(localStorage.getItem(KEY) || 'null'); if (s && s.items) state = s; } catch(e) {}
@@ -214,7 +215,7 @@ DATA.forEach((m, mi) => {
   m.shots.forEach(s => {
     const card = el('article', 'shot' + (s.imgs.length > 2 ? ' wide' : ''));
     const h3 = el('h3', '', s.who); if (s.extra) h3.append(el('small', '', s.extra)); card.append(h3);
-    const tiles = el('div', 'tiles' + (s.imgs.length > 2 ? ' three' : ''));
+    const tiles = el('div', 'tiles' + (s.imgs.length > 2 ? ' three' : s.imgs.length === 1 ? ' one' : ''));
     s.imgs.forEach(im => {
       const name = m.title + ' · ' + s.who + (s.extra ? ' (' + s.extra + ')' : '') + ' · ' + im.label;
       index.push({id: im.id, name});

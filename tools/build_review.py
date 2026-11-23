@@ -1,35 +1,96 @@
-import base64, io, json, sys
+"""Builds deliverables/shoshi-gelis-approval.html: a self-contained review page for the client.
+
+Usage: python3 -I tools/build_review.py tools/review_template.html
+Images come from catalog-refs/ (models made with the closeup-first method) and
+catalog-refs/earlier/ (models approved in earlier rounds: 2, 3, 4, 8, 11, 14).
+"""
+import base64, io, json, os, sys
 from PIL import Image
-R='/home/user/SHOSHI-GELIS/catalog-refs/'
-OUT='/home/user/SHOSHI-GELIS/deliverables/shoshi-gelis-approval.html'
-MODELS=[
- ('דגם 1','אפרסק',[('m01-d1-v3','נערה ראשונה','תחרת פרחים'),('m01-big-flowers','ילדה גדולה','עם פרחים'),('m01-big-plain','ילדה גדולה','חלק, חגורת אבנים'),('m01-small','ילדה קטנה','')]),
- ('דגם 5','ירוק כהה',[('m05-big','ילדה גדולה',''),('m05-small','ילדה קטנה','')]),
- ('דגם 6','מנטה',[('m06-d1','נערה ראשונה',''),('m06-d2','נערה שנייה',''),('m06-big','ילדה גדולה',''),('m06-small','ילדה קטנה','')]),
- ('דגם 7','תכלת־מנטה',[('m07-d1','נערה ראשונה',''),('m07-d2','נערה שנייה',''),('m07-big','ילדה גדולה',''),('m07-small','ילדה קטנה','')]),
- ('דגם 9','כחול־אפרפר',[('m09-d1','נערה ראשונה',''),('m09-d2','נערה שנייה',''),('m09-big','ילדה גדולה',''),('m09-small','ילדה קטנה','')]),
- ('דגם 10','שמנת עם גלים',[('m10-d1','נערה ראשונה',''),('m10-d2','נערה שנייה','')]),
- ('דגם 12','ורוד',[('m12-d1','נערה ראשונה','פסי קטיפה שחורים'),('m12-d2','נערה שנייה','קומות טול'),('m12-big','ילדה גדולה',''),('m12-small','ילדה קטנה','')]),
- ('דגם 13','שחור ובז׳',[('m13-d1','נערה ראשונה',''),('m13-d2','נערה שנייה',''),('m13-big','ילדה גדולה',''),('m13-small','ילדה קטנה','')]),
+
+R = '/home/user/SHOSHI-GELIS/catalog-refs/'
+E = R + 'earlier/'
+OUT = '/home/user/SHOSHI-GELIS/deliverables/shoshi-gelis-approval.html'
+D1, D2, BIG, SMALL = 'נערה ראשונה', 'נערה שנייה', 'ילדה גדולה', 'ילדה קטנה'
+CU, FB, SIDE, BACK = 'תקריב', 'גוף מלא', 'צילום מהצד', 'צילום מהגב'
+
+
+def new(sid, who, extra=''):
+    """Shot made with the closeup-first method: <sid>-closeup / -full / -side-full in catalog-refs."""
+    imgs = [(R + sid + '-closeup.jpg', CU), (R + sid + '-full.jpg', FB)]
+    if os.path.exists(R + sid + '-side-full.jpg'):
+        imgs.append((R + sid + '-side-full.jpg', SIDE))
+    return (sid, who, extra, imgs)
+
+
+def old(sid, who, extra, *parts):
+    """Earlier-round shot: parts are (file suffix, label) under catalog-refs/earlier/<sid>-<suffix>.jpg."""
+    return (sid, who, extra, [(E + sid + '-' + suf + '.jpg', label) for suf, label in parts])
+
+
+MODELS = [
+    ('דגם 1', 'אפרסק', [new('m01-d1-v3', D1, 'תחרת פרחים'), new('m01-big-flowers', BIG, 'עם פרחים'),
+                        new('m01-big-plain', BIG, 'חלק, חגורת אבנים'), new('m01-small', SMALL)]),
+    ('דגם 2', 'מוקה פרפרים / טורקיז', [
+        old('m02-d1-mocha', D1, 'מוקה', ('closeup', CU), ('full', FB)),
+        old('m02-d2-turquoise', D2, 'טורקיז', ('closeup-crop', CU), ('full', FB)),
+        old('m02-big-mocha', BIG, 'מוקה', ('closeup-crop', CU), ('full', FB), ('back', BACK)),
+        old('m02-small-mocha', SMALL, 'מוקה', ('closeup', CU), ('full', FB))]),
+    ('דגם 3', 'שמנת עם רקמת פרחים', [
+        old('m03-d1', D1, '', ('closeup-crop', CU), ('full', FB)),
+        old('m03-d2', D2, '', ('closeup-crop', CU), ('full', FB), ('back', BACK)),
+        old('m03-big', BIG, '', ('closeup-crop', CU), ('full', FB)),
+        old('m03-small', SMALL, '', ('closeup-crop', CU), ('full', FB))]),
+    ('דגם 4', 'שחור עם תחרה', [
+        old('m04-big', BIG, '', ('closeup-crop', CU), ('full', FB)),
+        old('m04-small', SMALL, '', ('closeup-crop', CU), ('full', FB))]),
+    ('דגם 5', 'ירוק כהה', [new('m05-big', BIG), new('m05-small', SMALL)]),
+    ('דגם 6', 'מנטה', [new('m06-d1', D1), new('m06-d2', D2), new('m06-big', BIG), new('m06-small', SMALL)]),
+    ('דגם 7', 'תכלת־מנטה', [new('m07-d1', D1), new('m07-d2', D2), new('m07-big', BIG), new('m07-small', SMALL)]),
+    ('דגם 8', 'שמנת עם תחרת פרחים', [
+        old('m08-d1', D1, '', ('full-lowres', FB)),
+        old('m08-d2', D2, '', ('full-lowres', FB)),
+        old('m08-big', BIG, '', ('full-lowres', FB)),
+        old('m08-small', SMALL, '', ('closeup', CU), ('full', FB))]),
+    ('דגם 9', 'כחול־אפרפר', [new('m09-d1', D1), new('m09-d2', D2), new('m09-big', BIG), new('m09-small', SMALL)]),
+    ('דגם 10', 'שמנת עם גלים', [new('m10-d1', D1), new('m10-d2', D2)]),
+    ('דגם 11', 'שמפניה נצנץ', [
+        old('m11-d1', D1, '', ('closeup-crop', CU), ('full', FB)),
+        old('m11-d2', D2, '', ('closeup', CU), ('full', FB)),
+        old('m11-big', BIG, '', ('closeup-crop', CU), ('full', FB)),
+        old('m11-small', SMALL, '', ('closeup-crop', CU), ('full', FB))]),
+    ('דגם 12', 'ורוד', [new('m12-d1', D1, 'פסי קטיפה שחורים'), new('m12-d2', D2, 'קומות טול'),
+                        new('m12-big', BIG), new('m12-small', SMALL)]),
+    ('דגם 13', 'שחור ובז׳', [new('m13-d1', D1), new('m13-d2', D2), new('m13-big', BIG), new('m13-small', SMALL)]),
+    ('דגם 14', 'ברוקד כסף־תכלת', [
+        old('m14-d1', D1, '', ('closeup-crop', CU), ('full', FB)),
+        old('m14-d2', D2, '', ('closeup-crop', CU), ('full', FB))]),
 ]
-import os
-def enc(path,h,q):
-    im=Image.open(path).convert('RGB'); im.thumbnail((10000,h),Image.LANCZOS)
-    b=io.BytesIO(); im.save(b,'JPEG',quality=q,optimize=True,progressive=True)
-    return 'data:image/jpeg;base64,'+base64.b64encode(b.getvalue()).decode(), im.size
-data=[]; n=0
-for mt,mc,shots in MODELS:
-    m={'title':mt,'color':mc,'shots':[]}
-    for sid,who,extra in shots:
-        imgs=[]
-        for kind,label,h,q in [('closeup','תקריב',1100,80),('full','גוף מלא',1500,82),('side-full','צילום מהצד',1500,82)]:
-            p=R+sid+'-'+kind+'.jpg'
-            if os.path.exists(p):
-                src,(w,hh)=enc(p,h,q); imgs.append({'id':sid+':'+kind,'label':label,'src':src,'w':w,'h':hh}); n+=1
-        assert len(imgs)>=2,sid
-        m['shots'].append({'who':who,'extra':extra,'imgs':imgs})
+
+
+def enc(path, label):
+    h, q = (1100, 80) if label == CU else (1500, 82)
+    im = Image.open(path).convert('RGB')
+    im.thumbnail((10000, h), Image.LANCZOS)
+    b = io.BytesIO()
+    im.save(b, 'JPEG', quality=q, optimize=True, progressive=True)
+    return 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode(), im.size
+
+
+data, n = [], 0
+for title, color, shots in MODELS:
+    m = {'title': title, 'color': color, 'shots': []}
+    for sid, who, extra, imgs in shots:
+        out = []
+        for path, label in imgs:
+            src, (w, h) = enc(path, label)
+            out.append({'id': os.path.basename(path)[:-4], 'label': label, 'src': src, 'w': w, 'h': h})
+            n += 1
+        m['shots'].append({'who': who, 'extra': extra, 'imgs': out})
     data.append(m)
-tpl=open(sys.argv[1],encoding='utf8').read()
-html=tpl.replace('/*__DATA__*/null',json.dumps(data,ensure_ascii=False)).replace('__TOTAL__',str(n))
-open(OUT,'w',encoding='utf8').write(html)
-print(n,'images',round(len(html.encode())/1e6,2),'MB')
+
+ids = [i['id'] for m in data for s in m['shots'] for i in s['imgs']]
+assert len(ids) == len(set(ids)), 'duplicate image ids'
+tpl = open(sys.argv[1], encoding='utf8').read()
+html = tpl.replace('/*__DATA__*/null', json.dumps(data, ensure_ascii=False)).replace('__TOTAL__', str(n))
+open(OUT, 'w', encoding='utf8').write(html)
+print(n, 'images,', sum(len(m['shots']) for m in data), 'shots,', round(len(html.encode()) / 1e6, 2), 'MB')
