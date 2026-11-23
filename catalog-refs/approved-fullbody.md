@@ -25,3 +25,6 @@
 | m13-d2 | 1 | `fHzQLv2CDY` |
 | m12-big | 1 (סבב 2) | `hu2E1sFvqL` |
 | m13-small | 1 (סבב 2) | `Lw8U6AeswO` |
+| m12-d1 | 2 | `JNCv3ZUOq4` |
+| m12-d1-side (צילום צד) | 2 | `rgXpwPFxtc` |
+| m13-big | 2 | `1ldDU9ir4r` |
