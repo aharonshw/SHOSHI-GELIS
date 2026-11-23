@@ -29,3 +29,4 @@
 | m10-d2 | 2 | `mEZafvPhJQ` | `UPv7hYTwny` (גוף מלא מאושר: `tCRvA1jmZJ`) |
 | m12-d1 | 2 | `dt4EtWvXSL` | `dtPqAacXSL` (גרסה 1, ננו בננה) |
 | m13-big | 2 | `dt4EQvqXSL` | `3zKZkXdREY` (עם הפרח במותן) |
+| m07-d1 | 2 (סבב 2, חצי אסוף) | `YMgfjvzWeC` | `KLp7S9okqp` |
