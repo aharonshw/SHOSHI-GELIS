@@ -403,3 +403,5 @@
 - **גוף מלא m07-d1 (23.11, ממתין לאישור):** `3zkokVCREY` (1) / `5jpNp7rKxe` (2); רפרנסים: התקריב `YMgfjvzWeC` + שמלה בלי ראש `N2bdqyo6D9`. גיליון: `review/r3/full/m07-d1-full.jpg`.
 - **אושר (23.11):** גוף מלא m07-d1 אפשרות 1 (`3zkokVCREY`); נשמר ב־catalog-refs. נשאר פתוח: דגם 1 של שתי הנערות (מחכה לתמונת השמלה משושי); דגם 9 נשים אושר בענף השני (`Bh962YyoQR`, `iGbKjwV3uK`) בלי תקריב/גוף מלא בשיטה החדשה.
 - **תקריבים לדגם 9 נשים (23.11, ממתין לאישור):** m09-d1 `dt9KR75XSL` (1) / `1lX3tVEr4r` (2), שמלה `Bh962YyoQR`; m09-d2 `N2bdrH46D9` (1) / `JNETqChOq4` (2), שמלה `iGbKjwV3uK`. גיליונות ב־`review/r3/closeups/m09-d1-closeup.jpg`, `m09-d2-closeup.jpg`.
+- **אושרו (23.11):** תקריב m09-d1 אפשרות 2 (`1lX3tVEr4r`), תקריב m09-d2 אפשרות 1 (`N2bdrH46D9`).
+- **גוף מלא דגם 9 נשים (23.11, ממתין לאישור):** m09-d1 `XmNkn35Bfo` (1) / `WDSCN7zcXe` (2), שמלה בלי ראש `u5cJBlpQLD`; m09-d2 `lJmzHuZgv9` (1) / `9Zqesj3NYZ` (2), שמלה בלי ראש `5jpNhyHKxe`. גיליונות: `review/r3/full/m09-d1-full.jpg`, `m09-d2-full.jpg`.

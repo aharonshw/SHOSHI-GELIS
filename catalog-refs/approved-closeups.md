@@ -30,3 +30,5 @@
 | m12-d1 | 2 | `dt4EtWvXSL` | `dtPqAacXSL` (גרסה 1, ננו בננה) |
 | m13-big | 2 | `dt4EQvqXSL` | `3zKZkXdREY` (עם הפרח במותן) |
 | m07-d1 | 2 (סבב 2, חצי אסוף) | `YMgfjvzWeC` | `KLp7S9okqp` |
+| m09-d1 | 2 | `1lX3tVEr4r` | `Bh962YyoQR` |
+| m09-d2 | 1 | `N2bdrH46D9` | `iGbKjwV3uK` |
