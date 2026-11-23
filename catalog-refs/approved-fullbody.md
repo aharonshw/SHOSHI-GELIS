@@ -29,3 +29,5 @@
 | m12-d1-side (צילום צד) | 2 | `rgXpwPFxtc` |
 | m13-big | 2 | `1ldDU9ir4r` |
 | m07-d1 | 1 | `3zkokVCREY` |
+| m09-d1 | 1 (אחרי עריכת שרוול) | `8a3jsEOIrU` |
+| m09-d2 | 2 (אחרי עריכת שרוול) | `ksd3ZO216B` |
