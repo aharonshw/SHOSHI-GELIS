@@ -32,3 +32,54 @@
 | m07-d1 | 2 (סבב 2, חצי אסוף) | `YMgfjvzWeC` | `KLp7S9okqp` |
 | m09-d1 | 2 | `1lX3tVEr4r` | `Bh962YyoQR` |
 | m09-d2 | 1 | `N2bdrH46D9` | `iGbKjwV3uK` |
+
+## עדכון 23.11: פתח צוואר לב עדין (תיקון ממוסך) — המזהה הקובע לתקריב
+
+| שוט | תקריב מתוקן |
+|---|---|
+| m01-small | `Td7b794VNR` |
+| m06-big | `tCZSZD1mZJ` |
+| m06-d2 | `SyvTvSfUb8` |
+| m06-small | `CqYyWk9EEy` |
+| m07-big | `gOh0vZfSXO` |
+| m07-d2 | `p8P14KOehw` |
+| m07-small | `p8P14L6ehw` |
+| m05-big | `xSoztdAjfW` |
+| m09-big | `Bh6LNJvoQR` |
+| m09-small | `lJmctvTgv9` |
+| m10-d1 | `DoykOAJpcl` |
+| m10-d2 | `79CDqKrJAL` |
+| m12-big | `gOh0hwNSXO` |
+| m12-d1 | `ksd2dgK16B` |
+| m12-small | `SyvTvRKUb8` |
+| m13-big | `rgBGBR6xtc` |
+
+## דגם 15 (אושר 23.11)
+
+| שוט | תקריב | שמלה |
+|---|---|---|
+| m15-d1 | `p8P1AIfehw` | `4RHXKzo9Aa` |
+| m15-d2 | `fHnOkw7CDY` | `3zktjDEREY` |
+| m15-big | `ksd2ntQ16B` | `bxDiX9F5Y2` |
+| m15-small | `ovis3UJ829` | `4RHXKoq9Aa` |
+
+## דגמים ישנים (2, 3, 4, 8, 11, 14): תקריבים חדשים באיכות גבוהה (אושרו 23.11), קבצים ב־earlier/<שוט>-closeup-hq.jpg
+
+| שוט | תקריב |
+|---|---|
+| m03-d1 | `6A58uGSiJO` |
+| m08-d1 | `Bh6L67moQR` |
+| m11-d1 | `aFzJzA8fSh` |
+| m14-d1 | `gOh0hENSXO` |
+| m02-d2-turquoise | `huAU6w5vqL` |
+| m03-d2 | `Syv0oX3Ub8` |
+| m08-d2 | `s7tYdXbl8e` |
+| m14-d2 | `cpUHUiK0eP` |
+| m02-big-mocha | `1lX2VyBr4r` |
+| m03-big | `MBO5gubDCm` |
+| m04-big | `YMgQSVJWeC` |
+| m08-big | `6A58uhYiJO` |
+| m11-big | `4RHBHJ09Aa` |
+| m11-small | `tCZS2xzmZJ` |
+
+בעבודה: תקריבים חדשים לילדה הקטנה בדגמים 3, 4 (פנים) ו־6, 7, 9 (תסרוקת).
